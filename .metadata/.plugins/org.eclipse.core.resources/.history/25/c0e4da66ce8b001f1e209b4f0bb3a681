@@ -1,0 +1,5 @@
+package com.coursejava.course.resource;
+
+public class UserResource {
+
+}
