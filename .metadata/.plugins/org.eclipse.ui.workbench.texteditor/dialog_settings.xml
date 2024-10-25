@@ -5,4 +5,7 @@
 	<list key="searchhistory">
 		<item value="User"/>
 	</list>
+	<list key="replacehistory">
+		<item value="Order"/>
+	</list>
 </section>
