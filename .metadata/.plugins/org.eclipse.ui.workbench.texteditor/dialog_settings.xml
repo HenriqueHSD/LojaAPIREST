@@ -6,6 +6,7 @@
 		<item value="User"/>
 	</list>
 	<list key="replacehistory">
+		<item value="Category"/>
 		<item value="Order"/>
 	</list>
 </section>
