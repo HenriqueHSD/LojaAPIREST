@@ -25,4 +25,5 @@
     <fullyQualifiedTypeName name="jakarta.persistence.JoinColumn"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="jakarta.persistence.OneToMany"/>
+    <fullyQualifiedTypeName name="com.coursejava.course.entities.Order"/>
 </qualifiedTypeNameHistroy>
