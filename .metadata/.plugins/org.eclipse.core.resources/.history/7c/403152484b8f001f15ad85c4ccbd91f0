@@ -1,5 +1,0 @@
-package com.coursejava.course.repositories;
-
-public interface UserRepository {
-
-}

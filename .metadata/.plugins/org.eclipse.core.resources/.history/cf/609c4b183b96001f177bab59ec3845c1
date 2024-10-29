@@ -1,0 +1,5 @@
+package com.coursejava.course.entities.pk;
+
+public class OrderItemPk {
+
+}
