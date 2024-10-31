@@ -1567,3 +1567,55 @@ java.util.concurrent.CompletionException: org.eclipse.lsp4j.jsonrpc.ResponseErro
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 	... 11 more
+!SESSION 2024-10-31 17:12:46.011 -----------------------------------------------
+eclipse.buildId=4.25.0.202409101855
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-10-31 17:13:01.066
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-10-31 17:13:06.478
+!MESSAGE Logback config file: /home/boninho/Documentos/Spring program/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-10-31 17:13:07.499
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-10-31 17:13:07.500
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-10-31 17:13:08.226
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-10-31 17:13:08.226
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-31 17:13:19.626
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+/home/boninho/Sring/spring-tool-suite-4-4.25.0.RELEASE-e4.33.0-linux.gtk.x86_64/sts-4.25.0.RELEASE/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_21.0.4.v20240802-1551/jre/bin/java
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=/home/boninho/Documentos/Spring program/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1730405599626
+-Dlanguageserver.hover-timeout=225
+-jar
+/home/boninho/Sring/spring-tool-suite-4-4.25.0.RELEASE-e4.33.0-linux.gtk.x86_64/sts-4.25.0.RELEASE/plugins/org.springframework.tooling.boot.ls_1.57.0.202409101848/servers/spring-boot-language-server/spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-31 17:13:19.627
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-31 17:13:19.701
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 16263
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-31 17:13:22.769
+!MESSAGE Boot project ADDED: course
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-31 17:13:22.770
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-31 17:13:22.770
+!MESSAGE Started Boot LS process
