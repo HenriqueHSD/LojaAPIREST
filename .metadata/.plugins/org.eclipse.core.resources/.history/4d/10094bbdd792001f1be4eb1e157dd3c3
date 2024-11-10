@@ -1,5 +1,0 @@
-package com.coursejava.course.entities.enums;
-
-public enum OrderStatus {
-
-}

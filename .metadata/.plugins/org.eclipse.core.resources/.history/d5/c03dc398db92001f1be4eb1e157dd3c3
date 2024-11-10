@@ -1,8 +1,0 @@
-package com.coursejava.course.entities;
-
-public class Cayegory {
-	
-	private Long id;
-	private String name;
-
-}
