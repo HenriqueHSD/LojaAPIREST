@@ -141,7 +141,7 @@ GET http://localhost:8080/orders/1 - ordem de compra pelo ID
 
 #### Exemplo:
 
-![imagemOrdem](imagemProjeto/Ordem.gif)
+![imagemOrdem](imagemProjeto/ordem.gif)
 
 ### 🔖 Teste na Categoria
 
