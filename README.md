@@ -1,14 +1,15 @@
 # Loja API REST
 
 Um sistema de compra de produtos em uma loja, desenvolvido no curso de JAVA do Nelio Alves, onde ele  
-retorna um JSON com informações do produto, sua categoria, ordem de pedido e o cliente.
+retorna um JSON com informações do produto, sua categoria, ordem de pedido e o cliente. Fiz algumas alterções mudando o banco de dados que inicialmente estava no H2, agora esta em PostgreSQL e coloquei autenticação via token.
 
 ## 📋 Pré-requisitos
 
 ```
-Java 17 ou 21
+Java 21
 Postman
 IDE Intellij ou Eclipe
+PostgresSQL
 ```
 
 ## ⚙️ Executando os testes
