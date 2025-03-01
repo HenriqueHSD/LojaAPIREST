@@ -1,8 +1,6 @@
 # Loja API REST
 
-Um sistema de compra de produtos em uma loja, desenvolvido no curso de JAVA do Nelio Alves, onde ele  
-retorna um JSON com informações do produto, sua categoria, ordem de pedido e o cliente. Fiz algumas alterções mudando o banco de dados que inicialmente estava no H2, agora esta em PostgreSQL e coloquei autenticação via token.
-
+Um sistema de compra de produtos em uma loja, desenvolvido no curso de JAVA do Nelio Alves. Ele retorna um JSON com informações do produto, sua categoria, ordem de pedido e o cliente. Fiz algumas alterações, mudando o banco de dados que inicialmente estava no H2 para PostgreSQL e adicionando autenticação via token.
 ## 📋 Pré-requisitos
 
 ```
@@ -11,11 +9,63 @@ Postman
 IDE Intellij ou Eclipe
 PostgresSQL
 ```
+Configure o arquivo `course/src/main/resources/application-dev.properties`:
+
+```
+spring.datasource.url=jdbc:postgresql://localhost:5432/{seu banco}
+spring.datasource.username={seu nome}
+spring.datasource.password={sua senha}
+```
 
 ## ⚙️ Executando os testes
 
 Inicie o programa na IDE de sua escolha e utilize o Postman para realizar os seguintes testes.
 
+### 🔒 Login de Usuário
+
+No Postman, utilize o seguinte comando para fazer login:
+
+```
+POST http://localhost:8080/auth/login
+```
+**Body:**
+
+**Admin (acesso completo)**
+
+```json
+{
+"email": "admin@admin.com",
+"password": "123456789"
+}
+```
+
+**User (acesso a ordem, produto e categoria)**
+
+```json
+{
+"email": "user@user.com",
+"password": "12345"
+}
+```
+
+**Customer (acesso a produto e categoria)**
+
+```json
+{
+"email": "customer@customer.com",
+"password": "123"
+}
+```
+O sistema retornará um token que deverá ser usado em todas as consultas. No Postman, acesse a aba **Authorization**, selecione **Bearer Token** e cole o token.
+
+#### Exemplo:
+
+![login](imagemProjeto/login.png)
+
+![token](imagemProjeto/token.png)
+
+
+---
 ### 👨‍💼 Teste no usuario
 
 No usuário, podemos:  
@@ -24,7 +74,7 @@ No usuário, podemos:
 - Inserir um novo usuário  
 - Deletar um usuário a partir do seu ID  
 - Alterar um usuário a partir do seu ID  
-***
+
 No Postman, utilize os seguintes comandos para visualizar os dados:
 
 ```
@@ -105,12 +155,12 @@ DELETE http://localhost:8080/users/3
 
 ![imagemDelete3](imagemProjeto/usuarioAll.png)
 
+---
 ### 📦 Teste no Produto
 
 No produto, podemos:  
 - Consultar todos os produtos  
-- Consultar apenas um produto pelo seu ID 
-***
+- Consultar apenas um produto pelo seu ID
 
 ```
 GET http://localhost:8080/products - todos os produtos
@@ -127,13 +177,15 @@ GET http://localhost:8080/products/1 - produto pelo ID
 
 ![imagemProdutoId](imagemProjeto/produtoId.png)
 
+
+---
 ### 🛒 Teste no Ordem
 
 Na ordem, podemos:  
 - Consultar todas as compras finalizadas  
 - Consultar o total das compras e o cliente associado  
 - Consultar apenas uma ordem de compra pelo seu ID  
-***
+
 
 ```
 GET http://localhost:8080/orders - todas as ordens de compra
@@ -144,12 +196,14 @@ GET http://localhost:8080/orders/1 - ordem de compra pelo ID
 
 ![imagemOrdem](imagemProjeto/ordem.gif)
 
+---
+
 ### 🔖 Teste na Categoria
 
 Na categoria, podemos:  
 - Consultar todas as categorias  
 - Consultar apenas uma categoria pelo seu ID  
-***
+
 
 ```
 GET http://localhost:8080/categoryes - todas as categorias
@@ -165,12 +219,13 @@ GET http://localhost:8080/categoryes/1 - categoria pelo id
 
 ![imagemCategoriId](imagemProjeto/categoriaId.png)
 
-
+---
 ## 🛠️ Construído com
 
 * **Java** - Linguagem de programação  
 * **Spring Boot** - Framework  
 * **H2** - Banco de dados de teste 
+* **PostegresSQL** - Banco de dados
 
 
 
